@@ -1,0 +1,98 @@
+-------------------------------------------------------------------------------
+* Algorithmic Stock Trader
+*
+* @author:	Steven Shaw
+* @email:	sps5688@rit.edu
+* @date:	8/18/12
+-------------------------------------------------------------------------------
+
+Overview:
+The purpose of this application is to simulate trading on the United States 
+Stock market with an emphasis on automated trading. This application makes
+it easy to code your own stock trading algorithms and test them. To do so,
+simply copy the AlgorithmTemplate class and create your own algorithm. Each
+algorithm must implement the Algorithm Interface. Then, add your algorithm
+to the availableAlgorithms list in the ConsoleView class and run the application.
+It does have one algorithm built in that uses Fibonacci Retracements.
+
+The application uses the Yahoo! Finance API for stock data. I was going to
+use the Google Finance API, however, I learned that it is being shutdown
+in October of 2012. If you would like to use a different API to retrieve the
+data, add a new class in the incoming_data_sources package.
+Note that the ConsoleView class uses the Yahoo! Finance API in a few areas.
+
+The application serializes the user's Portfolio upon exiting. To use a new
+Portfolio, delete the "portfolio.ser" file and restart. Future versions
+will not require this to use a new portfolio.
+
+NOTE:
+My application does not make real purchases. It merely simulates purchases.
+Be weary of following the advice that the algorithms produce. This application
+is meant to be a educational resource. Nothing more, nothing less.
+
+How to run:
+Either run the application in an IDE such as Eclipse or navigate to where
+the executable jar is located and use the following command.
+
+java -jar Algorithmic_Stock_Trader.jar
+
+-------------------------------------------------------------------------------
+Future Features
+-------------------------------------------------------------------------------
+Add and Remove funds.
+
+Account Summary page.
+
+Implement a way to construct a new Portfolio.
+
+Modify the way the simulation duration is entered. Ex) 50 min or 2 hours.
+
+Add a GUI.
+
+Implement Short Selling and Buy To Cover Order Types. Menus already in place.
+
+Implement market on close, limit, stop, stop limit, trailing stop $, and 
+trailing stop % price types. All the classes are created and in place.
+
+Multi-thread the simulation to increase performance.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-------------------------------------------------------------------------------
+Known Issues
+-------------------------------------------------------------------------------
+If $0 is entered when creating a portfolio, you can't purchase stocks
+and you can't add money later.
+
+Yahoo sometimes sends back random errors. Not sure of the cause.
+
+Can only make trades and execute algorithms during regular market hours.
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-------------------------------------------------------------------------------
+Legal:
+-------------------------------------------------------------------------------
+
+I am licensing my application under The MIT License (MIT). 
+The complete license can be found in LICENSE.txt.
+
+I (Steven Shaw) and ALL contributors are NOT RESPONSIBLE
+for any financial loss you may endure while using this application. 
+The information that the application retrieves is meant for PERSONAL USE ONLY!
+
+This application uses the Yahoo! Finance API to retrieve financial data.
+By using this application you agree to Yahoo! Inc.'s Terms of Service.
+
+Yahoo! Inc's Terms of Service can be found here: 
+http://info.yahoo.com/legal/us/yahoo/utos/utos-173.html
+
+By accessing the Yahoo! site, you agree not to redistribute the information
+found therein.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+-------------------------------------------------------------------------------
+Change Log:
+-------------------------------------------------------------------------------
+sps5688@rit.edu	Initial Revision
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
