@@ -575,8 +575,6 @@ public class ConsoleView {
 				// Uses Reflection to initialize the correct Algorithm class
 				try{
 					Class<?> someClass = Class.forName(algorithm.getCanonicalName());
-					//Constructor constructor = someClass.getConstructor(new Class[] { Portfolio.class });
-					//algorithmToExecute = (Algorithm) constructor.newInstance(portfolioToUse);
 					Constructor constructor = someClass.getConstructor(new Class[] { });
 					algorithmToExecute = (Algorithm) constructor.newInstance();
 				}catch(Exception e){
