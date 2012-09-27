@@ -61,6 +61,8 @@ Multi-thread the simulation to increase performance.
 -------------------------------------------------------------------------------
 Known Issues
 -------------------------------------------------------------------------------
+Sometimes the built in Algorithm purchases negative share amounts.
+
 If $0 is entered when creating a portfolio, you can't purchase stocks
 and you can't add money later.
 
